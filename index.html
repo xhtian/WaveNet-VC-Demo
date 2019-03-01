@@ -61,10 +61,10 @@
             <div>
 	            <li><strong>Source:</strong> Speech samples from the source speaker.</li>
 	            <li><strong>Target:</strong> Speech samples from the target speaker.</li>
-	            <li><strong>GMM-WORLD:</strong> The joint-density Gaussian mixture model with maximum likelihood parameter conversion [4].</li>
-	            <li><strong>GMM(GV)-WORLD:</strong> The GMM-WORLD with post-filtering based GV enhancement for speech generation [5].</li>
-	            <li><strong>GMM-WaveNet:</strong> We use the same setting as GMM-WORLD with WaveNet vocoder for speech generation.</li>
-	            <li><strong>GMM(GV)-WaveNet:</strong>  We use the same setting as GMM(GV)-WORLD with WaveNet vocoder for speech generation.</li>
+	            <li><strong>GMM-WORLD:</strong> The joint-density Gaussian mixture model with maximum likelihood parameter conversion <a href="#1">[1]</a>.</li>
+	            <li><strong>GMM(GV)-WORLD:</strong> The GMM-WORLD with post-filtering based GV enhancement for speech generation <a href="#2">[2]</a>.</li>
+	            <li><strong>GMM-WaveNet:</strong> We use the same setting as GMM-WORLD with WaveNet vocoder for speech generation <a href="#3">[3]</a>.</li>
+	            <li><strong>GMM(GV)-WaveNet:</strong>  We use the same setting as GMM(GV)-WORLD with WaveNet vocoder for speech generation <a href="#3">[3]</a>.</li>
                 <li><strong>WaveNet-PPG:</em></strong> The proposed WaveNet based voice conversion system with non-parallel data. PPG was used as the local condition of the WaveNet.</li>
 	            <li><strong><em>WaveNet-VC:</em></strong> The proposed WaveNet based voice conversion system with non-parallel data. PPG, voiced/unvoiced flag and converted $f0$ were used as the local condition of the WaveNet.</li>
             </div>
@@ -74,7 +74,7 @@
         <div class="row" id="result">
           <div class="col-md-12">
             <h2>Speech Samples</h2>
-            <p>The model is evaluated with CMU arctic database<a href="#2">[2]</a>.</p>
+            <p>The model is evaluated with CMU-ARCTIC database.</p>
             <div>
               <table class="table">
                 <thead>
@@ -314,11 +314,15 @@
             <div>
               <p>
                 <a name="1" class="text-primary">[1]</a>
-                Xiaohai Tian, Junchao Wang, Haihua Xu, Eng-Siong Chng, and Haizhou Li, <a href="https://www.isca-speech.org/archive/Odyssey_2018/pdfs/11.pdf">“Average modeling approach to voice conversion with non-parallel data</a>,” in <em>Proceedings of Odyssey The Speaker and Language Recognition Workshop, 2018, pp. 227–232.</em>
+                Tomoki Toda, Alan W Black, and Keiichi Tokuda, "Voice conversion based on maximum-likelihood estimation of spectral parameter trajectory," <em>IEEE Transactions on Audio, Speech, and Language Processing</em>, vol. 15, no. 8, pp. 2222–2235, 2007.
               </p>
               <p>
                 <a name="2" class="text-primary">[2]</a>
-                Jaime Lorenzo-Trueba, Junichi Yamagishi, Tomoki Toda, Daisuke Saito, Fernando Villavicencio, Tomi Kinnunen, and Zhenhua Ling, <a href="https://arxiv.org/abs/1804.04262">“The voice conversion challenge 2018: Promoting development of parallel and nonparallel method</a>,” in <em>Speaker Odyssey, 2018.</em>
+                Tomoki Toda, Takashi Muramatsu, and Hideki Banno, "Implementation of computationally efficient real-time voice conversion," in <em>Proc. INTERSPEECH</em>, 2012.
+              </p>
+	      <p>
+                <a name="3" class="text-primary">[3]</a>
+                Kobayashi, Kazuhiro, Tomoki Hayashi, Akira Tamamori, and Tomoki Toda. "Statistical Voice Conversion with WaveNet-Based Waveform Generation." in <em>Proc. INTERSPEECH</em>, pp. 1138-1142. 2017.
               </p>
             </div>
           </div>
